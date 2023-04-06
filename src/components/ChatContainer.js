@@ -111,7 +111,7 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 1.2rem 2rem;
-    background-color: #0d0d35;
+    background-color: #4E3398;
     .menubar-avatar-profile {
       dispaly: flex;
       flex-direction: column;
@@ -126,7 +126,7 @@ const Container = styled.div`
       }
       .avatar {
         img {
-          height: 3rem;
+          height: 2rem;
         }
       }
       .username {

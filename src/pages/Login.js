@@ -65,17 +65,22 @@ const Login = () => {
     <>
      <FormContainer>
         <form onSubmit={(event) => handleSubmit(event)}>
-            <div className='brand'>
-               <img src={Logo} alt='Logo' />
-               <h1>Messenger App</h1>
+          <div className='brand'>
+              <img src={Logo} alt='Logo' />
+              <h1>Messenger App</h1>
+          </div>
+          <div className='alignn'>
+            <h3>Have Your Best Chat🤝</h3>
+          </div>
+          <input type='text' placeholder='Username' name='username' onChange={(e) => handleChange(e)} min='3' />
+          
+          <input type='password' placeholder='Password' name='password' onChange={(e) => handleChange(e)} />
+          
+          <button type='submit'>LOGIN</button>
+          <span>Don't have an account ? <Link to='/register'>Register</Link></span>
+          <div  className='alignn'>
+              <h3>Taking with everyone and keep secure...</h3>
             </div>
-
-            <input type='text' placeholder='Username' name='username' onChange={(e) => handleChange(e)} min='3' />
-            
-            <input type='password' placeholder='Password' name='password' onChange={(e) => handleChange(e)} />
-            
-            <button type='submit'>LOGIN</button>
-            <span>Don't have an account ? <Link to='/register'>Register</Link></span>
         </form>
      </FormContainer>
      <ToastContainer />
@@ -103,7 +108,12 @@ const FormContainer = styled.div`
     h1{
         color: white;
     }
-  } 
+  }
+  .alignn {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+  }
 
   form {
     display: flex;
@@ -145,10 +155,13 @@ const FormContainer = styled.div`
     span {
       color: white;
       text-transform: uppercase;
+      display: flex;
+      justify-content: center;
       a {
         color: #4e0eff;
         text-decoration: none;
         font-weight: bold;
+        margin-left:2px;
       }
     }
 `;

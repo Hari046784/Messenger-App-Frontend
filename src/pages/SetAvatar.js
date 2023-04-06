@@ -10,7 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 
 const SetAvatar = () => {
-    const api = 'https://api.multiavatar.com/45678945'; 
+    const api = 'https://api.multiavatar.com/45678263'; 
     
     const navigate = useNavigate();
     const [avatars, setAvatars] = useState([]);
@@ -81,7 +81,7 @@ const SetAvatar = () => {
         </Container> : (
         <Container>
         <div className='title-container'>
-          <h1>Pick an avatar as your profile picture</h1>
+          <h1>Choose an avatar as your profile picture.</h1>
         </div>
         <div className='avatars'>{
          avatars.map((avatar,index) => {

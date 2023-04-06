@@ -123,11 +123,13 @@ const Container = styled.div`
     }
   }
   .current-user {
-    background-color: #080410;
+    background-color: #7B3037;
     display: flex;
+    margin-top:15px;
+    height:80px;
     justify-content: center;
     align-items: center;
-    gap:2rem;
+    gap:1rem;
     .avatar {
         img {
             height: 4rem;
