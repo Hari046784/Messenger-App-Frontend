@@ -79,7 +79,7 @@ const Login = () => {
           <button type='submit'>LOGIN</button>
           <span>Don't have an account ? <Link to='/register'>Register</Link></span>
           <div  className='alignn'>
-              <h3>Taking with everyone and keep secure...</h3>
+              <h3>Talking with everyone and keep secure...</h3>
             </div>
         </form>
      </FormContainer>
